@@ -1,0 +1,9 @@
+{{form.as_p}}
+{% csrf_token %}
+
+def clean(self):
+        all_clean_data=super().clean()
+        email=all_clean_data['email']
+        vemail=all_clean_data['veryfy_email']
+        if email!=vemail:
+            raise forms.ValidationError('Make Sure the email is match')

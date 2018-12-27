@@ -1,0 +1,8 @@
+BooleanField()
+CharField()
+URLField()
+DateTimeField('date published')
+IntegerField()
+EmailField()
+
+<a href="{% url 'admin:index' %}">Click Me</a>

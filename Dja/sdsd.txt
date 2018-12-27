@@ -1,0 +1,3 @@
+view is a some kind of specific url that can be return some kind of response
+eg: model view template
+ 

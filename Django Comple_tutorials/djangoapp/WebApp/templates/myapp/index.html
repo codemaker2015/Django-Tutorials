@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel='stylesheet' href="{% static "css/style.css" %}">
+  </head>
+  <body>
+    <h1>Hello Its My First Templates</h1>
+    <p>Hello How are you</p>
+    {{insert_me}}
+    {{insert_me}}
+    <a href="{% url 'abc' %}">Click Here</a><br/>
+    <a href="{% url 'hello' %}">Click and View the Details</a>
+    <h1>{{insert_me}}</h1>
+    <img src="{% static "images/form1.png" alt="Oops Sorry Not" %}" width="500" height="400">
+
+  </body>
+</html>

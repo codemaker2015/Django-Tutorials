@@ -1,0 +1,38 @@
+basically a user is request url on a website
+eg:hello.com
+then url gos on url.py file and it call views.py file 
+models.py py call the 
+
+The computer will think of 3 digit number that has no 
+repeating digit
+
+you will then guess a 3 digit number
+the computer will then give back clues
+
+based on these clues you will guess again untill you brrak
+the code wit hmatch
+
+The possible clues are:
+close:you are guss number is correct but in wrong posityion
+match:-you've gueesed no match. in the correct position
+Nop:- no correct position
+
+conda --envs
+activate myDjangoEnv
+
+When you install Django, it actually also 
+installed a command line tool called django-admin
+
+let's create our first project type
+django-admin startproject firstproject
+atom --new-instance
+let use manage.py now 
+python manage.py runserver
+
+
+django first application:
+------------------------
+python manage.py startapp first_app
+url.py:-control what is served based on url pattern
+model.py:-database structues and metadata
+views.py:-handled what the end-user "views" or intract with.

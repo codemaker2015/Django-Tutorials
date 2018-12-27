@@ -1,0 +1,7 @@
+Django is a free and open source web framework
+its used by many websites including pinterest,pbs,instagra,BitBucket,mozilla etc
+crated
+conda create --name myEnv django
+myEnv latest version of django
+deactivate envmnt
+deactivate myEnv

@@ -1,0 +1,6 @@
+when a form method is post pass the request in POST method
+like 
+	form=FormName(request.POST)
+
+ if the form.is_valid:	
+	print form.cleaned_data['name']

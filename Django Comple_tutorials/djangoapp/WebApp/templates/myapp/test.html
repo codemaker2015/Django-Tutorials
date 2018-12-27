@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h1>Hello Its Our Details</h1>
+<div>
+{% if access_record %}
+  <table border='1'>
+    <thead><tr><th>Name</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th>Salary</th>
+</tr>
+</thead>
+ {% for con in access_record %}
+  <tr><td>{{con.name}}</td>
+  <td>{{con.age}}</td>
+<td>{{con.ename}}</td>
+<td>{{con.salary}}</td></tr>
+  {% endfor %}
+</table>
+{% else %}
+  <p>Record is Not Be Found</p>
+{% endif %}
+</div>
+  </body>
+</html>

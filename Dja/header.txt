@@ -1,0 +1,10 @@
+template inheriting:-
+{% block body_block %}
+body
+{% endblock %}
+open other file:
+
+{%extends 'base.html' %}
+{%block body_block %}
+contens
+<% endblock %>

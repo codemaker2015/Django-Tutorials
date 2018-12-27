@@ -1,0 +1,26 @@
+def index(request):
+    my_dict={'insert_me':"Hello How are you"}
+    return render(request,'index.html',context=my_dict)
+
+
+
+EMP_DIR=os.path.join(BASE_DIR,"templates")
+
+
+static files:-
+---------------
+STATICFILES_DIRS=[static file path ]
+how to load static files
+<!doctype html>
+{% load staticfiles %}
+
+ using {% %}
+eg:   <img src="{% static "images/check.jpg" %}" alt="HahaHa Image can't be load" width="50" height="50">
+css add:
+{% static "css/style.css" %}
+
+models:-
+-------
+python manage.py migration
+register the fiels model.py
+python manage.py makemigrations
